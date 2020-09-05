@@ -1,0 +1,1 @@
+sudo docker run --restart unless-stopped -d -v /var/docker/apache/vhosts:/vhosts -v /var/docker/apache/www:/www -v /var/docker/apache/certs:/certs -v /var/docker/apache/logs:/logs -p 80:80 -p 443:443 --name apache apache

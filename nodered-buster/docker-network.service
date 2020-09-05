@@ -1,0 +1,20 @@
+
+#https://www.raspberrypi.org/forums/viewtopic.php?t=232989
+# cut the crap secrtion: https://www.freedesktop.org/wiki/Software/systemd/NetworkTarget/
+# systemctl is-enabled systemd-networkd-wait-online.service
+# https://www.raspberrypi.org/documentation/linux/usage/systemd.md
+
+[Unit]
+Description=Docker macvlan Networking
+After=network.target
+
+[Service]
+ExecStart=/bin/bash /var/docker/node-red/network-start.sh
+WorkingDirectory=/var/docker/node-red
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
