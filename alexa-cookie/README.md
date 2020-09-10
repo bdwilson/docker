@@ -1,5 +1,7 @@
 # Alexa Cookie Container
 
+This is for use with the [Amazon Alexa TTS Direct Integration for Hubitat](https://community.hubitat.com/t/release-amazon-alexa-text-to-speech-tts-v0-5-8-direct-integration-usa-canada-uk-italy-australia-brazil).
+
 # Installation
 
 1. <code>git clone https://github.com/bdwilson/docker</code>
