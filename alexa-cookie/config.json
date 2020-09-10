@@ -1,0 +1,7 @@
+{
+	"port":"MAINPORT",
+	"proxyPort":"PROXYPORT",
+	"username": "USER",
+	"password": "PASS",
+	"consoleLogging": false
+}
