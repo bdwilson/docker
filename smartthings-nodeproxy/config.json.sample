@@ -1,0 +1,66 @@
+{
+  "port": 8080,
+  "authCode": "your_secret_code",
+  "envisalink": {
+    "address": "192.168.1.x",
+    "port": "4025",
+    "password": "user",
+    "securityCode": "9999",
+    "dumpZoneTimer": "0",
+    "panelConfig": {
+      "type": "discover",
+      "partitions": [
+        {
+          "partition": 1,
+          "name": "Honeywell Security Panel"
+        }
+      ],
+      "zones": [
+        {
+          "zone": 1,
+          "type": "smoke",
+          "name": "Smoke Detector"
+        },
+        {
+          "zone": 2,
+          "type": "contact",
+          "name": "Front Door"
+        },
+        {
+          "zone": 3,
+          "type": "contact",
+          "name": "Garage Door"
+        },
+        {
+          "zone": 4,
+          "type": "contact",
+          "name": "Back Door"
+        },
+        {
+          "zone": 5,
+          "type": "motion",
+          "name": "Foyer Motion"
+        },
+        {
+          "zone": 6,
+          "type": "motion",
+          "name": "Master Motion"
+        },
+        {
+          "zone": 7,
+          "type": "contact",
+          "name": "Master Glass"
+        },
+        {
+          "zone": 8,
+          "type": "contact",
+          "name": "Kitchen and Dining Glass"
+        }
+      ]
+    }
+  },
+  "notify": {
+    "address": "192.168.1.xx",
+    "port": "39501"
+  }
+}
